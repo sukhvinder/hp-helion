@@ -1,3 +1,7 @@
+::Chef::Recipe.send(:include, Opscode::OpenSSL::Password)
+
+include_recipe 'java'
+
 name "java-app-server"
 run_list("recipe[tomcat]")
 override_attributes(

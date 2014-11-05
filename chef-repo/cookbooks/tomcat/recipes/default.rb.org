@@ -34,7 +34,7 @@ if node['tomcat']['deploy_manager_apps']
       'default' => "tomcat#{node['tomcat']['base_version']}-admin",
     },    
     %w{ centos redhat fedora amazon scientific oracle } => {
-      'default' => "tomcat#{node['tomcat']['7']}-admin-webapps",
+      'default' => "tomcat#{node['tomcat']['base_version']}-admin-webapps",
     }
     )
 end
